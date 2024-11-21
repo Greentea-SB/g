@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект</title>
+    <style>
+        /* Общий стиль */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+
+        /* Шапка */
+        header {
+            background-color: #2c0150;
+            color: #e0e0e0;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 0 0 10px #b517ff, 0 0 20px #9000ff, 0 0 30px #7000cc;
+        }
+
+        /* Разделитель */
+        .divider {
+            margin: 40px auto;
+            width: 80%;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #b517ff, transparent);
+        }
+
+        /* Основной блок */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 0 0 10px #b517ff, 0 0 20px #9000ff;
+        }
+
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .video-item {
+            background: rgba(45, 15, 80, 0.8);
+            border: 2px solid #b517ff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #9000ff, 0 0 20px #b517ff;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #b517ff, 0 0 40px #9000ff;
+        }
+
+        .video-item h3 {
+            background: #7000cc;
+            color: white;
+            font-size: 1.2em;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px #9000ff;
+        }
+
+        .video-item iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+
+        /* Текст внизу */
+        .text-section {
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: rgba(30, 10, 60, 0.8);
+            border: 2px solid #b517ff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #9000ff, 0 0 20px #b517ff;
+            color: #e0e0e0;
+            text-align: left;
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        .text-section blockquote {
+            margin: 20px 0;
+            font-size: 1.1em;
+            color: #b517ff;
+            text-shadow: 0 0 10px #7000cc;
+            border-left: 4px solid #b517ff;
+            padding-left: 15px;
+        }
+
+        /* Подвал */
+        footer {
+            margin-top: 40px;
+            padding: 20px 0;
+            background-color: #2c0150;
+            color: #e0e0e0;
+            text-align: center;
+            font-size: 0.9em;
+            text-shadow: 0 0 10px #b517ff, 0 0 20px #9000ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Проект по книге
+    </header>
+    
+    <main>
+        <p class="main-title">Смолев Богдан</p>
+        
+        <!-- Разделитель -->
+        <div class="divider"></div>
+        
+        <!-- Видео -->
+        <div class="video-container">
+            <div class="video-item">
+                <h3>Лодка</h3>
+                <iframe src="https://www.youtube.com/embed/zpp72d2-Qek?si" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <h3>море</h3>
+                <iframe src="https://www.youtube.com/embed/e31LjtX7Lx0?si" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <h3>итог</h3>
+                <iframe src="https://www.youtube.com/embed/kqR8X7KIDyg?si" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Разделитель -->
+        <div class="divider"></div>
+
+        <!-- Текст -->
+        <div class="text-section">
+            <p>В <strong>«Старике и море»</strong> Эрнест Хемингуэй описывает океан не через сцены шторма, а через постоянную борьбу старика Сантьяго с природной стихией. Вот отрывок, который передает ощущение опасности на море:</p>
+            <blockquote>
+                "Ветер стал крепчать, и он понимал, что скоро поднимется волна. Но старик был доволен. У него все шло хорошо: на корме лодки плескалась огромная рыба, ветер помогал ему возвращаться домой. Только надо было торопиться, чтобы не попасть в сильный шторм".
+            </blockquote>
+        </div>
+    </main>
+    
+    <footer>
+        © 2024 П2Б проект 
+    </footer>
+</body>
+</html>
